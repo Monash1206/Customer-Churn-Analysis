@@ -1,10 +1,5 @@
 # Customer-Churn-Analysis
 
-
-# 📊 Business Analyst Portfolio – Kishwanth Nallasamy
-
-This repository contains portfolio projects created as part of my journey as a Business Analyst with 1.3 years of experience. The projects showcase my practical skills in Excel, SQL, Power BI, and business problem solving.
-
 ## 📚 Table of Contents
 
 - Program Description  
