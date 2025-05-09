@@ -3,7 +3,7 @@
 ## 📚 Table of Contents
 
 - Program Description  
-- Project 1: Customer Churn Analysis  
+- Customer Churn Analysis  
 - Tools & Techniques Used  
 
 ## 🔎 Program Description
