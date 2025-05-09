@@ -1,111 +1,122 @@
-# Customer-Churn-Analysis
+# 📊 Customer Churn Analysis
 
-## 📚 Table of Contents
-
-- Program Description  
-- Customer Churn Analysis  
-- Tools & Techniques Used  
-
-## 🔎 Program Description
-
-This portfolio highlights real-world business analytics skills applied across customer retention, service efficiency, and product strategy. I have used Excel for data wrangling and dashboard creation, SQL for querying structured datasets, and demonstrated how data-driven decisions can improve customer loyalty and reduce churn.
-
-## 📁 Customer Churn Analysis (Excel + SQL)
-
-### 🧠 Problem Statement
-
-A subscription-based company was experiencing a rise in customer churn. The goal was to analyze churn patterns, identify high-risk segments, and suggest actionable strategies to reduce churn and improve service efficiency.
-
-### 🗂️ Dataset Description
-
-The project uses 3 interconnected tables:
-
-- Customers Table: Contains demographic and subscription start information.
-- Subscriptions Table: Tracks subscription plans, charges, and payment methods.
-- Interactions Table: Logs customer service interactions, types, and resolution times.
-
-This project uses three relational tables:
-
-#### 🧍 Customers Table
-
-Basic customer info and demographics.
-**Columns:**
-
-* `CustomerID` – Unique customer ID
-* `FirstName`, `LastName` – Customer name
-* `Gender`, `Age`, `Region` – Demographics
-* `JoinDate` – Subscription start date
-* `IsActive` – 1 = Active, 0 = Churned
-
-#### 💳 Subscriptions Table
-
-Tracks plan, billing, and contract details.
-**Columns:**
-
-* `SubscriptionID` – Unique plan ID
-* `CustomerID` – Foreign key
-* `PlanType` – Basic / Standard / Premium
-* `ContractType` – Monthly / Yearly
-* `MonthlyCharges` – Plan cost
-* `PaymentMethod` – Card / Bank / UPI
-* `SubscriptionStatus` – Active / Cancelled
-
-#### 🛠️ Interactions Table
-
-Service-related complaints and resolutions.
-**Columns:**
-
-* `InteractionID` – Ticket ID
-* `CustomerID` – Foreign key
-* `InteractionDate` – Date of interaction
-* `IssueType` – Billing / Technical / General
-* `ResolutionTimeMins` – Time taken to resolve
-* `AgentName` – Support staff
-* `IsResolved` – 1 = Resolved, 0 = Open
+This project is part of a Business Analyst portfolio focused on analyzing customer churn behavior using SQL and Excel. The objective is to identify trends, build insights, and recommend data-driven strategies to improve customer retention.
 
 ---
 
-### 🛠️ Tools & Techniques Used
+## 🧠 Project Summary
 
-- Microsoft Excel (Data Cleanup, Pivot Tables, Dashboard)
-- SQL (Joins, CTEs, Aggregates, CASE, DATE functions)
-- Business Intelligence and Problem Solving
-- Data-Driven Insights and Recommendations
+A company noticed a drop in customer engagement and suspects churn. As a Business Analyst, I extracted and analyzed customer data from three tables using MySQL. I built key visualizations using Excel and presented insights into the churn patterns, factors contributing to churn, and proposed actionable recommendations.
 
-### 📈 Excel Dashboard Highlights
+---
 
-- Churn Rate Overview: Pie and trend charts to track churn over time.
-- Customer Demographics: Age distribution, contract types, and plan segmentation.
-- Service Effectiveness: Avg. resolution time by interaction type.
-- Revenue Metrics: Monthly charges by contract type and plan.
+## 🗃️ Dataset Overview
 
-### 🧾 SQL Queries Used
-1. Churned Customers by Plan Type (with JOIN & CASE)
-2. Avg. Monthly Charges by Contract Type (using GROUP BY)
-3. Top 5 Customers with Most Interactions (with JOIN & ORDER)
-4. Customers with Churn and Long Resolution Times (CASE & JOIN)
-5. CTE for Repeat Complaints (using CTE & Window Function)
-6. Monthly Churn Trend (DATE & COUNT)
-7. Average Resolution Time by Agent (GROUP BY)
-8. Customer Retention Score (CASE + Aggregates)
+The dataset is split into 3 tables:
 
-## 🎯 Key Business Insights
+| Table Name    | Description                                      |
+|---------------|--------------------------------------------------|
+| `customers`   | Contains demographic and profile info of users   |
+| `transactions`| Contains transaction history                     |
+| `churn`       | Stores churn flag for each customer              |
 
-- Premium Plan users had a higher churn rate compared to Basic and Standard.
-- Monthly contracts resulted in significantly higher churn than Yearly ones.
-- Customers with multiple complaints had 60%+ probability of churn.
-- Average resolution time above 80 mins correlated strongly with churn.
+### 1. `customers` Table
 
-## 📌 Outcomes & Impact
+| Column Name | Description       |
+|-------------|-------------------|
+| CustomerID  | Unique ID         |
+| Gender      | Male / Female     |
+| Age         | Customer's age    |
+| Region      | North/South/etc.  |
+| JoinDate    | Date joined       |
 
-- Built a robust Excel dashboard to present churn patterns clearly.
-- Used advanced SQL techniques to extract key performance indicators.
-- Provided actionable insights to improve service delivery and contract structure.
-- Demonstrated hands-on capability to solve real-world retention problems.
+### 2. `transactions` Table
 
-## 🧰 Tools and Techniques Summary
+| Column Name      | Description             |
+|------------------|-------------------------|
+| TransactionID    | Unique transaction ID   |
+| CustomerID       | Foreign key             |
+| TransactionDate  | Date of transaction     |
+| Amount           | Purchase amount         |
 
-- Microsoft Excel: Data cleaning, formulas, Pivot Tables, Charts, Dashboarding  
-- SQL: Joins, CASE, CTEs, Aggregates, DATE functions, Filtering  
-- Faker Library: Used to simulate real-world business datasets  
-- Business Problem Solving: KPI building, retention scoring, stakeholder-friendly reporting
+### 3. `churn` Table
+
+| Column Name | Description                    |
+|-------------|--------------------------------|
+| CustomerID  | Unique customer ID             |
+| Churned     | Yes/No – whether they churned  |
+
+---
+
+## 🔍 Tools Used
+
+- **MySQL** – for querying relational data  
+- **Microsoft Excel** – for dashboards, pivots, charts  
+- **PowerPoint / PDF** – to summarize findings  
+
+---
+
+## 💡 Business Goals
+
+- Identify who is churning and why  
+- Segment churners by demographics and behavior  
+- Recommend retention strategies  
+
+---
+
+## 🧮 SQL Queries Used
+
+Stored in `sql/churn_analysis_queries.sql`
+
+**Highlight Features:**
+- `JOIN` operations across 3 tables  
+- `CTE` usage for complex filters  
+- `CASE WHEN`, `DATE_DIFF`, and `RANK()`  
+- Aggregations: `COUNT()`, `SUM()`, `AVG()`  
+- Window functions  
+
+**Sample Queries Include:**
+1. Total number of churned vs retained customers  
+2. Avg transaction amount by churn status  
+3. Churn rate by region and gender  
+4. Most recent transaction date per customer  
+5. Active vs inactive users in last 30 days  
+6. Customer lifetime value (CLV) approximation  
+7. Churn trend by cohort (joining year)  
+8. Ranking top spenders who churned  
+
+---
+
+## 📊 Excel Dashboard
+
+Stored in `excel/churn_data_analysis.xlsx`
+
+**Visuals Included:**
+- Monthly churn trend chart  
+- Region-wise churn %  
+- Gender-wise churn distribution  
+- Transaction volume heatmap  
+- Top 10 churned customers by spend  
+- Pivot tables to drill down by region & gender  
+
+---
+
+## 📁 Folder Structure
+
+```bash
+customer-churn-analysis/
+│
+├── README.md
+├── sql/
+│   └── churn_analysis_queries.sql
+├── excel/
+│   └── churn_data_analysis.xlsx
+├── data/
+│   └── cleaned/
+│       ├── customers.csv
+│       ├── transactions.csv
+│       └── churn.csv
+├── visuals/
+│   └── dashboard_screenshot.png
+├── reports/
+│   └── churn_analysis_summary.pdf
