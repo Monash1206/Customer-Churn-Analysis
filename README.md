@@ -101,6 +101,27 @@ Stored in `excel/churn_data_analysis.xlsx`
 
 ---
 
+##  📈 Key Insights
+Churn Rate: 20% of total customers churned
+
+High-Risk Segments: Age 18–25, East region
+
+Low Engagement: 40% of churners made < 3 transactions
+
+Revenue Impact: Churned customers contributed 25% to revenue
+
+---
+## ✅ Recommendations
+Launch retention offers for East region
+
+Improve engagement campaigns for new joiners
+
+Introduce loyalty programs for high spenders
+
+Predict churn risk using cohort-based scoring
+
+--- 
+
 ## 📁 Folder Structure
 
 ```bash
