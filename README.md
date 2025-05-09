@@ -79,7 +79,7 @@ Service-related complaints and resolutions.
 - Service Effectiveness: Avg. resolution time by interaction type.
 - Revenue Metrics: Monthly charges by contract type and plan.
 
-### 🧾 SQL Queries Used (Sample of 8+ Queries)
+### 🧾 SQL Queries Used
 1. Churned Customers by Plan Type (with JOIN & CASE)
 2. Avg. Monthly Charges by Contract Type (using GROUP BY)
 3. Top 5 Customers with Most Interactions (with JOIN & ORDER)
