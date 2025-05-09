@@ -24,12 +24,6 @@ The project uses 3 interconnected tables:
 - Subscriptions Table: Tracks subscription plans, charges, and payment methods.
 - Interactions Table: Logs customer service interactions, types, and resolution times.
 
-- Sure! Here's a **short and crisp version** for your GitHub README:
-
----
-
-### 🗂️ Dataset Description
-
 This project uses three relational tables:
 
 #### 🧍 Customers Table
