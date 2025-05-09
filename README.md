@@ -1,6 +1,6 @@
 # 📊 Customer Churn Analysis
 
-This project is part of a Business Analyst portfolio focused on analyzing customer churn behavior using SQL and Excel. The objective is to identify trends, build insights, and recommend data-driven strategies to improve customer retention.
+This project is part of a Business Analyst portfolio that analyzes customer churn behavior using SQL and Excel. The objective is to identify trends, build insights, and recommend data-driven strategies to improve customer retention.
 
 ---
 
