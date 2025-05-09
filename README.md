@@ -10,7 +10,7 @@
 
 This portfolio highlights real-world business analytics skills applied across customer retention, service efficiency, and product strategy. I have used Excel for data wrangling and dashboard creation, SQL for querying structured datasets, and demonstrated how data-driven decisions can improve customer loyalty and reduce churn.
 
-## 📁 Project 1: Customer Churn Analysis (Excel + SQL)
+## 📁 Customer Churn Analysis (Excel + SQL)
 
 ### 🧠 Problem Statement
 
