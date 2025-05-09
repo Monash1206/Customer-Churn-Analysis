@@ -24,6 +24,53 @@ The project uses 3 interconnected tables:
 - Subscriptions Table: Tracks subscription plans, charges, and payment methods.
 - Interactions Table: Logs customer service interactions, types, and resolution times.
 
+- Sure! Here's a **short and crisp version** for your GitHub README:
+
+---
+
+### 🗂️ Dataset Description
+
+This project uses three relational tables:
+
+#### 🧍 Customers Table
+
+Basic customer info and demographics.
+**Columns:**
+
+* `CustomerID` – Unique customer ID
+* `FirstName`, `LastName` – Customer name
+* `Gender`, `Age`, `Region` – Demographics
+* `JoinDate` – Subscription start date
+* `IsActive` – 1 = Active, 0 = Churned
+
+#### 💳 Subscriptions Table
+
+Tracks plan, billing, and contract details.
+**Columns:**
+
+* `SubscriptionID` – Unique plan ID
+* `CustomerID` – Foreign key
+* `PlanType` – Basic / Standard / Premium
+* `ContractType` – Monthly / Yearly
+* `MonthlyCharges` – Plan cost
+* `PaymentMethod` – Card / Bank / UPI
+* `SubscriptionStatus` – Active / Cancelled
+
+#### 🛠️ Interactions Table
+
+Service-related complaints and resolutions.
+**Columns:**
+
+* `InteractionID` – Ticket ID
+* `CustomerID` – Foreign key
+* `InteractionDate` – Date of interaction
+* `IssueType` – Billing / Technical / General
+* `ResolutionTimeMins` – Time taken to resolve
+* `AgentName` – Support staff
+* `IsResolved` – 1 = Resolved, 0 = Open
+
+---
+
 ### 🛠️ Tools & Techniques Used
 
 - Microsoft Excel (Data Cleanup, Pivot Tables, Dashboard)
