@@ -66,8 +66,6 @@ The dataset is split into 3 tables:
 
 ## 🧮 SQL Queries Used
 
-Stored in `sql/churn_analysis_queries.sql`
-
 **Highlight Features:**
 - `JOIN` operations across 3 tables  
 - `CTE` usage for complex filters  
@@ -88,8 +86,6 @@ Stored in `sql/churn_analysis_queries.sql`
 ---
 
 ## 📊 Excel Dashboard
-
-Stored in `excel/churn_data_analysis.xlsx`
 
 **Visuals Included:**
 - Monthly churn trend chart  
@@ -120,24 +116,4 @@ Introduce loyalty programs for high spenders
 
 Predict churn risk using cohort-based scoring
 
---- 
-
-## 📁 Folder Structure
-
-```bash
-customer-churn-analysis/
-│
-├── README.md
-├── sql/
-│   └── churn_analysis_queries.sql
-├── excel/
-│   └── churn_data_analysis.xlsx
-├── data/
-│   └── cleaned/
-│       ├── customers.csv
-│       ├── transactions.csv
-│       └── churn.csv
-├── visuals/
-│   └── dashboard_screenshot.png
-├── reports/
-│   └── churn_analysis_summary.pdf
+---
