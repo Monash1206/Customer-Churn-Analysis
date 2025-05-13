@@ -73,16 +73,6 @@ The dataset is split into 3 tables:
 - Aggregations: `COUNT()`, `SUM()`, `AVG()`  
 - Window functions  
 
-**Sample Queries Include:**
-1. Total number of churned vs retained customers  
-2. Avg transaction amount by churn status  
-3. Churn rate by region and gender  
-4. Most recent transaction date per customer  
-5. Active vs inactive users in last 30 days  
-6. Customer lifetime value (CLV) approximation  
-7. Churn trend by cohort (joining year)  
-8. Ranking top spenders who churned  
-
 ---
 
 ## 📊 Excel Dashboard
